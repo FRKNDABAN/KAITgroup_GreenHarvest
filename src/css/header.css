@@ -46,3 +46,39 @@ nav {
   width: 216px;
   height: 20px;
 }
+
+.navlist a:hover {
+    cursor: pointer;
+    background-color: #D4BFC4;
+    color: #7a3145;
+    border-color: #D4BFC4;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.navlist a:focus {
+    cursor: pointer;
+    background-color: #FBFBFB;
+    border-color: #FBFBFB;
+    color: #7a3145;
+    transition-duration: 1ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.b_shop:hover {
+    cursor: pointer;
+    background-color: #D4BFC4;
+    color: #7a3145;
+    border-color: #D4BFC4;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.b_shop:focus {
+    cursor: pointer;
+    background-color: #FBFBFB;
+    border-color: #FBFBFB;
+    color: #7a3145;
+    transition-duration: 1ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
