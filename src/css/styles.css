@@ -1,18 +1,41 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+* {
+  font-family: "Inter Tight", sans-serif;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Common styles */
-@import url('./reset.css');
-@import url('./base.css');
-@import url('./container.css');
-@import url('./animations.css');
+@import url("./reset.css");
+@import url("./container.css");
 
 /* Sections style */
-@import url('./header.css');
-@import url('./vite-promo.css');
-@import url('./badges.css');
-@import url('./back-link.css');
-@import url('./footer.css');
+@import url("./header.css");
+@import url("./hero.css");
+@import url("./how_is_work.css");
+@import url("./advertisement.css");
+@import url("./vegatables.css");
+@import url("./reviews.css");
+@import url("./your_order.css");
+@import url("./footer.css");
+@import url("./modal_menu.css");
+
+/* header css baslangıc --> furkan */
+
+/* hero css baslangıc --> furkan */
+
+/* how_is_work css baslangıc --> atahan */
+
+/* advertisement css baslangıc --> melis*/
+
+/* vegetables css baslangıc --> atahan */
+
+/* reviews css baslangıc --> melis */
+
+/* your_order css baslangıc --> kazım */
+
+/* footer css baslangıc --> musab */
+
+/* modal menu ve mobil --> rumeysa */
