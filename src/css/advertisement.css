@@ -51,7 +51,7 @@
   }
 
   .advertisement-accent {
-    display: inline;
+    display: inline-block;
     width: auto;
     padding: 4px 8px;
   }
