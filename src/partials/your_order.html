@@ -1,49 +1,63 @@
 <!--Rumeysa-baslangic-->
 <section class="your_order">
     <div class="container">
-        <div class="your_order__content">
-            <h2 class="your_order__title">Fresh Harvest Box has got you covered</h2>
-            <p class="your_order__text">
-                Ordering from us is quick and easy! Fill out the form below and we will contact you!
+        <div class="your_order__title">
+            <h2 class="your_order__heading">
+                Fresh <span class="your_order__accent">Harvest</span> Box Has Got You Covered
+            </h2>
+            <p class="your_order__lead">
+                Our boxes are packed with delicious, nutritious vegetables, perfect for anyone
+                looking to eat healthier or support local farmers. Order your box today and
+                start enjoying the best that nature has to offer!
             </p>
-
-            <form class="your_order__form" novalidate>
-                <label class="your_order__label">
-                    <input class="your_order__input" type="text" name="name" placeholder="Name" required />
-                </label>
-
-                <label class="your_order__label">
-                    <input class="your_order__input" type="email" name="email" placeholder="Email"
-                        pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
-                </label>
-
-                <label class="your_order__label">
-                    <textarea class="your_order__textarea" name="message" placeholder="Message"></textarea>
-                </label>
-
-                <button class="your_order__btn" type="submit">Send</button>
-            </form>
-
-            <ul class="your_order__socials">
-                <li class="your_order__social-item">
-                    <a class="your_order__social-link" href="https://www.instagram.com/goit.turkiye/" target="_blank"
-                        rel="noopener noreferrer">Instagram</a>
-                </li>
-                <li class="your_order__social-item">
-                    <a class="your_order__social-link" href="https://m.youtube.com/@GoITTurkey" target="_blank"
-                        rel="noopener noreferrer">YouTube</a>
-                </li>
-                <li class="your_order__social-item">
-                    <a class="your_order__social-link"
-                        href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/" target="_blank"
-                        rel="noopener noreferrer">Facebook</a>
-                </li>
-            </ul>
         </div>
 
-        <div class="your_order__image-wrapper">
-            <img class="your_order__image" src="../image/order-photo.jpg"
-                alt="Woman preparing fresh vegetables in the kitchen" width="500" height="600" />
+        <div class="your_order__grid">
+            <!-- Sol kart: form -->
+            <div class="your_order__form-card">
+                <p class="your_order__subheading">
+                    Ordering <span class="your_order__accent-maroon">from us</span> is quick and easy!
+                    Fill out <span class="your_order__accent-green">the form</span> below and we
+                    will contact you!
+                </p>
+
+                <form class="your_order__form" novalidate>
+                    <input class="your_order__field-input" type="text" name="name" placeholder="Full Name"
+                        aria-label="Full Name" required />
+
+                    <input class="your_order__field-input" type="email" name="email" placeholder="Email"
+                        aria-label="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
+
+                    <textarea class="your_order__field-input your_order__field-input--textarea" name="comment"
+                        placeholder="Comment" aria-label="Comment"></textarea>
+
+                    <button class="your_order__btn" type="submit">Send</button>
+                </form>
+            </div>
+
+            <!-- Sağ kart: görsel + sosyal medya -->
+            <div class="your_order__info-card">
+                <img class="your_order__image" src="../image/order-photo.jpg"
+                    alt="Woman preparing fresh vegetables in the kitchen" width="500" height="380" />
+
+                <p class="your_order__socials-title">Follow us on our social networks:</p>
+
+                <ul class="your_order__socials">
+                    <li class="your_order__social-item">
+                        <a class="your_order__social-link" href="https://www.instagram.com/goit.turkiye/"
+                            target="_blank" rel="noopener noreferrer">Instagram</a>
+                    </li>
+                    <li class="your_order__social-item">
+                        <a class="your_order__social-link"
+                            href="https://www.facebook.com/people/GOIT-T%C3%BCrkiye/61558036560161/" target="_blank"
+                            rel="noopener noreferrer">Facebook</a>
+                    </li>
+                    <li class="your_order__social-item">
+                        <a class="your_order__social-link" href="https://m.youtube.com/@GoITTurkey" target="_blank"
+                            rel="noopener noreferrer">YouTube</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 </section>

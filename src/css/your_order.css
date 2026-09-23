@@ -1,111 +1,179 @@
 .your_order {
-    background-color: var(--color-dark, #33262a);
+    background-color: var(--color-green, #576f35);
     color: var(--color-white, #ffffff);
     padding: 100px 0;
 }
 
-.your_order .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-}
-
-.your_order__content {
-    max-width: 496px;
-}
-
 .your_order__title {
-    font-size: 36px;
+    max-width: 700px;
+    margin-bottom: 52px;
+}
+
+.your_order__heading {
+    font-size: 40px;
     line-height: 1.2;
     font-weight: 700;
+    text-transform: uppercase;
     margin-bottom: 16px;
 }
 
-.your_order__text {
-    margin-bottom: 32px;
+.your_order__accent {
+    color: var(--color-accent, #d4bfc4);
+}
+
+.your_order__accent-maroon {
+    color: var(--color-maroon, #7a3145);
+}
+
+.your_order__accent-green {
+    color: var(--color-green, #576f35);
+}
+
+.your_order__lead {
+    font-size: 16px;
+    line-height: 1.5;
     color: var(--color-light, #e6e6e6);
+    max-width: 560px;
+}
+
+.your_order__grid {
+    display: flex;
+    align-items: stretch;
+    gap: 24px;
+}
+
+/* Sol kart: form */
+.your_order__form-card {
+    flex-basis: 50%;
+    background-color: var(--color-white, #ffffff);
+    color: #2b2b2b;
+    border-radius: 16px;
+    padding: 32px;
+}
+
+.your_order__subheading {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-transform: uppercase;
+    margin-bottom: 24px;
 }
 
 .your_order__form {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin-bottom: 24px;
 }
 
-.your_order__input,
-.your_order__textarea {
+/* Figma ölçüleri: height 52px, border-radius 30px, border 1px solid #858585,
+   padding 16px 16px 16px 16px (sağdaki 376px değeri auto-layout boşluğu,
+   gerçek padding değil) */
+.your_order__field-input {
     width: 100%;
-    padding: 12px 16px;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    background-color: var(--color-white, #ffffff);
-    color: #2b2b2b;
+    height: 52px;
+    padding: 16px;
+    border: 1px solid var(--color-border, #858585);
+    border-radius: 30px;
+    background-color: transparent;
     font-size: 16px;
     font-family: inherit;
+    color: #1a1a1a;
+    outline: none;
 }
 
-.your_order__textarea {
-    min-height: 96px;
+.your_order__field-input::placeholder {
+    color: #1a1a1a;
+    font-size: 16px;
+    opacity: 1;
+}
+
+.your_order__field-input--textarea {
+    height: auto;
+    min-height: 120px;
+    border-radius: 20px;
+    padding-top: 16px;
     resize: vertical;
 }
 
-/* Boş/dokunulmamış alanı kırmızı göstermemek için :placeholder-shown ile birlikte kullanıyoruz */
-.your_order__input:valid:not(:placeholder-shown),
-.your_order__textarea:valid:not(:placeholder-shown) {
+/* Kenarlığı :valid/:invalid'e göre renklendir (sadece kullanıcı bir şey yazdıktan sonra) */
+.your_order__field-input:valid:not(:placeholder-shown) {
     border-color: var(--color-green, #576f35);
 }
 
-.your_order__input:invalid:not(:placeholder-shown),
-.your_order__textarea:invalid:not(:placeholder-shown) {
+.your_order__field-input:invalid:not(:placeholder-shown) {
     border-color: #e0301e;
 }
 
 .your_order__btn {
-    align-self: flex-start;
-    padding: 12px 32px;
+    align-self: stretch;
+    padding: 14px 32px;
     border: none;
-    border-radius: 4px;
-    background-color: var(--color-green, #576f35);
+    border-radius: 999px;
+    background-color: var(--color-maroon, #7a3145);
     color: #ffffff;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 16px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
     cursor: pointer;
     transition: background-color 250ms ease-in-out;
 }
 
 .your_order__btn:hover,
 .your_order__btn:focus {
-    background-color: #465a2a;
+    background-color: #431a29;
+}
+
+/* Sağ kart: görsel + sosyal medya */
+.your_order__info-card {
+    flex-basis: 50%;
+    background-color: var(--color-maroon, #7a3145);
+    border-radius: 16px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.your_order__image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    object-fit: cover;
+    margin-bottom: auto;
+}
+
+.your_order__socials-title {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    color: var(--color-light, #e6e6e6);
 }
 
 .your_order__socials {
     display: flex;
-    gap: 20px;
+    align-items: center;
+    gap: 10px;
     list-style: none;
+    flex-wrap: wrap;
+}
+
+.your_order__social-item:not(:last-child)::after {
+    content: "/";
+    margin-left: 10px;
+    color: var(--color-light, #e6e6e6);
 }
 
 .your_order__social-link {
     color: var(--color-white, #ffffff);
-    text-decoration: underline;
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
     transition: color 250ms ease-in-out;
 }
 
 .your_order__social-link:hover,
 .your_order__social-link:focus {
     color: var(--color-green, #576f35);
-}
-
-.your_order__image-wrapper {
-    flex-shrink: 0;
-}
-
-.your_order__image {
-    display: block;
-    width: 100%;
-    max-width: 500px;
-    height: auto;
-    border-radius: 8px;
-    object-fit: cover;
 }
