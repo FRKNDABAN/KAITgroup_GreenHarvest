@@ -1,0 +1,111 @@
+.your_order {
+    background-color: var(--color-dark, #33262a);
+    color: var(--color-white, #ffffff);
+    padding: 100px 0;
+}
+
+.your_order .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.your_order__content {
+    max-width: 496px;
+}
+
+.your_order__title {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.your_order__text {
+    margin-bottom: 32px;
+    color: var(--color-light, #e6e6e6);
+}
+
+.your_order__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.your_order__input,
+.your_order__textarea {
+    width: 100%;
+    padding: 12px 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    background-color: var(--color-white, #ffffff);
+    color: #2b2b2b;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.your_order__textarea {
+    min-height: 96px;
+    resize: vertical;
+}
+
+/* Boş/dokunulmamış alanı kırmızı göstermemek için :placeholder-shown ile birlikte kullanıyoruz */
+.your_order__input:valid:not(:placeholder-shown),
+.your_order__textarea:valid:not(:placeholder-shown) {
+    border-color: var(--color-green, #576f35);
+}
+
+.your_order__input:invalid:not(:placeholder-shown),
+.your_order__textarea:invalid:not(:placeholder-shown) {
+    border-color: #e0301e;
+}
+
+.your_order__btn {
+    align-self: flex-start;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 4px;
+    background-color: var(--color-green, #576f35);
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 250ms ease-in-out;
+}
+
+.your_order__btn:hover,
+.your_order__btn:focus {
+    background-color: #465a2a;
+}
+
+.your_order__socials {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+.your_order__social-link {
+    color: var(--color-white, #ffffff);
+    text-decoration: underline;
+    transition: color 250ms ease-in-out;
+}
+
+.your_order__social-link:hover,
+.your_order__social-link:focus {
+    color: var(--color-green, #576f35);
+}
+
+.your_order__image-wrapper {
+    flex-shrink: 0;
+}
+
+.your_order__image {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
