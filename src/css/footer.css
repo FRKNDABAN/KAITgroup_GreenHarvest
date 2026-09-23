@@ -1,9 +1,6 @@
-:root {
-    --chianti: #7a3145;
-}
 
-.footer {
-    background-color: var(--chianti);
+footer {
+    background-color: red;
     color: #fff;
     padding: 52px 100px;
     display: flex;
@@ -22,14 +19,14 @@
 }
 
 .footer__logo {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-size: 18px;
-    font-weight: 600;
-    color: #fff;
-    text-decoration: none;
-    margin-bottom: 16px;
+   display: flex;
+   align-items: center;
+   gap: 8px;
+   font-size: 18px;
+   font-weight: 600;
+   color: #fff;
+   text-decoration: none;
+   margin-bottom: 16px; 
 }
 
 .footer__text {
