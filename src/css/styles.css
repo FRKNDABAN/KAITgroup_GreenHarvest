@@ -1,22 +1,23 @@
 /* Common styles */
-@import url("./reset.css");
-@import url("./container.css");
+@import url('./reset.css');
+@import url('./container.css');
 
-/* Sections style */
-@import url("./header.css");
-@import url("./hero.css");
-@import url("./how_it_work.css");
-@import url("./advertisement.css");
-@import url("./vegetables.css");
-@import url("./reviews.css");
-@import url("./your_order.css");
-@import url("./footer.css");
-@import url("./modal_menu.css");
+/* Sections styles */
+@import url('./header.css');
+@import url('./hero.css');
+@import url('./how_it_work.css');
+@import url('./advertisement.css');
+@import url('./vegetables.css');
+@import url('./reviews.css');
+@import url('./your_order.css');
+@import url('./footer.css');
+@import url('./modal_menu.css');
 
 * {
-  font-family: "Inter Tight", sans-serif;
+  font-family: 'Inter Tight', sans-serif;
 }
 
+*,
 *::before,
 *::after {
   box-sizing: border-box;
@@ -28,7 +29,7 @@
 
 /* how_is_work css baslangıc --> atahan */
 
-/* advertisement css baslangıc --> melis*/
+/* advertisement css baslangıc --> melis */
 
 /* vegetables css baslangıc --> atahan */
 
@@ -37,5 +38,3 @@
 /* your_order css baslangıc --> kazım */
 
 /* footer css baslangıc --> musab */
-
-/* modal menu ve mobil --> rumeysa */
