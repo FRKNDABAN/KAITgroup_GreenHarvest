@@ -1,0 +1,52 @@
+.hero .container {
+  display: flex;
+  background-color: #576f35;
+  margin: 0 auto;
+}
+
+.hero_text_img {
+  display: flex;
+}
+
+.hero_text {
+  display: flex;
+  flex-direction: column;
+  width: 504px;
+  height: 564px;
+  gap: 128px;
+  margin: 232px 36px 0 100px;
+}
+
+.hero_img {
+  width: 625px;
+  height: auto;
+  background-image: url('../image/sepet.jpg');
+  background-size: cover;
+
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hero_text h1 {
+  margin: 0;
+  color: #fff;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 76px;
+  line-height: 1;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+}
+
+.hero_text p {
+  margin: 0 32px 0 0;
+  color: #fff;
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: normal;
+  max-width: 472px;
+  width: 100%;
+}
