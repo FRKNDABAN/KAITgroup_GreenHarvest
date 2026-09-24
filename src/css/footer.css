@@ -1,77 +1,85 @@
-
 footer {
-    background-color: red;
-    color: #fff;
-    padding: 52px 100px;
-    display: flex;
-    flex-direction: column;
-    gap: 124px;
+  background-color: #7a3145;
 }
 
+footer .conteiner{
+    padding: 52px 100px ;
+}
+
+
 .footer__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-items: flex-start;
+  width: 1080px;
+  height: 144px;
 }
 
 .footer__brand {
-    max-width: 250px;
-}
-
-.footer__logo {
-   display: flex;
-   align-items: center;
-   gap: 8px;
-   font-size: 18px;
-   font-weight: 600;
-   color: #fff;
-   text-decoration: none;
-   margin-bottom: 16px; 
-}
-
-.footer__text {
-    font-size: 14px;
-    line-height: 1.4;
-}
-
-.footer__nav {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-}
-
-.footer__nav a {
-    font-size: 24px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer__contant {
-    font-style: normal;
-    font-size: 14px;
-    font-weight: 600;
+    width: 265px;
+    height: 104px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+    margin-right: 250px;
 }
 
-.footer__contant a {
-    color: #fff;
-    text-decoration: none;
+.footer__logo-icon {
+  width: 216px;
+  height: 20px;
+  flex-shrink: 0;
+  fill: #fff;
+}
+
+.footer__text {
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.block{
+    display: flex;
+    gap: 121px;
+}
+
+.footer__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__nav a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer__contact {
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.footer__contact a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    font-size: 14px;
+    width: 1080px;
+        height: auto;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
 }
 
 .footer__legal {
-    display: flex;
-    gap: 12px;
+  display: flex;
+  gap: 12px;
 }
 
 .footer__legal a {
-    color: #fff;
-    text-decoration: none;
+  color: #fff;
+  text-decoration: none;
 }
