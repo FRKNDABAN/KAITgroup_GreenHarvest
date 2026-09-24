@@ -1,47 +1,3 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  font-family: "Inter Tight", sans-serif;
-  color: #141414;
-  background-color: #fbfbfb;
-}
-
-h1,
-h2,
-h3,
-p {
-  margin: 0;
-}
-
-ul,
-ol {
-  margin: 0;
-  padding: 0;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-  border: 0;
-}
-
 .how-it-works {
   background-color: #7a3145;
 }
@@ -63,7 +19,9 @@ img {
 }
 
 .how-it-works-image {
-  width: 100%;
+  display: block;
+
+  width: 440px;
   height: 560px;
 
   border-radius: 30px;
@@ -79,11 +37,12 @@ img {
 }
 
 .how-it-works-title {
-  margin-bottom: 24px;
+  margin: 0 0 24px;
 
+  font-family: "Inter Tight", sans-serif;
   font-weight: 600;
   font-size: 32px;
-  line-height: 1;
+  line-height: 32px;
   letter-spacing: -0.015em;
   text-transform: uppercase;
 
@@ -95,21 +54,24 @@ img {
 }
 
 .how-it-works-description {
-  margin-bottom: 104px;
+  margin: 0 0 104px;
 
+  font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 20px;
+  letter-spacing: 0;
 
   color: #fbfbfb;
 }
-
-/* COUNTER */
 
 .how-it-works-list {
   display: flex;
   flex-direction: column;
   gap: 24px;
+
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 
@@ -120,6 +82,7 @@ img {
   display: flex;
   align-items: center;
 
+  width: 100%;
   min-height: 84px;
 
   padding: 12px 24px;
@@ -142,24 +105,29 @@ img {
   width: 52px;
   height: 52px;
 
-  margin-right: 24px;
+  margin-right: 16px;
 
   border: 5px solid #d4bfc4;
   border-radius: 50%;
 
   background-color: #7a3145;
 
+  font-family: "Inter Tight", sans-serif;
   font-weight: 600;
   font-size: 20px;
-  line-height: 1;
+  line-height: 20px;
 
   color: #fbfbfb;
 }
 
 .how-it-works-item-text {
+  margin: 0;
+
+  font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.25;
+  line-height: 20px;
+  letter-spacing: 0;
 
   color: #858585;
 }
@@ -167,4 +135,21 @@ img {
 .how-it-works-item-text strong {
   font-weight: 700;
   color: #141414;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+
+  border: 0;
 }
