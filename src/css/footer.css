@@ -96,7 +96,7 @@ footer .container{
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #D4BFC4;
   text-decoration: none;
 }
 
@@ -105,7 +105,7 @@ footer .container{
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #fff;
+    color: #D4BFC4;
 }
 
 .footer__copyright {
@@ -113,5 +113,5 @@ footer .container{
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
-  color: #fff;
+  color: #D4BFC4;
 }
