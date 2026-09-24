@@ -2,13 +2,18 @@
     --chianti: #7a3145;
 }
 
-.footer {
-    background-color: var(--chianti);
+footer {
+    background-color: #7a3145;
     color: #fff;
     padding: 52px 100px;
     display: flex;
     flex-direction: column;
     gap: 124px;
+}
+
+footer .container {
+    max-width: 1200px;
+    width: 100%;
 }
 
 .footer__top {
@@ -32,6 +37,13 @@
     margin-bottom: 16px;
 }
 
+.footer__logo-icon {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    fill: #fff;
+}
+
 .footer__text {
     font-size: 14px;
     line-height: 1.4;
@@ -49,7 +61,7 @@
     text-decoration: none;
 }
 
-.footer__contant {
+.footer__contact {
     font-style: normal;
     font-size: 14px;
     font-weight: 600;
@@ -58,7 +70,7 @@
     gap: 24px;
 }
 
-.footer__contant a {
+.footer__contact a {
     color: #fff;
     text-decoration: none;
 }
