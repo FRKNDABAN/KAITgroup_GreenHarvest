@@ -1,0 +1,155 @@
+.how-it-works {
+  background-color: #7a3145;
+}
+
+.how-it-works-container {
+  display: flex;
+
+  width: 100%;
+  max-width: 1280px;
+
+  margin: 0 auto;
+}
+
+.how-it-works-image-side {
+  width: 50%;
+  padding: 100px;
+
+  background-color: #7a3145;
+}
+
+.how-it-works-image {
+  display: block;
+
+  width: 440px;
+  height: 560px;
+
+  border-radius: 30px;
+
+  object-fit: cover;
+}
+
+.how-it-works-content {
+  width: 50%;
+  padding: 100px;
+
+  background-color: #576f35;
+}
+
+.how-it-works-title {
+  margin: 0 0 24px;
+
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+
+  color: #fbfbfb;
+}
+
+.how-it-works-accent {
+  color: #d4bfc4;
+}
+
+.how-it-works-description {
+  margin: 0 0 104px;
+
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+
+  color: #fbfbfb;
+}
+
+.how-it-works-list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  counter-reset: step-counter;
+}
+
+.how-it-works-item {
+  display: flex;
+  align-items: center;
+
+  width: 100%;
+  min-height: 84px;
+
+  padding: 12px 24px;
+
+  border-radius: 15px;
+
+  background-color: #fbfbfb;
+
+  counter-increment: step-counter;
+}
+
+.how-it-works-item::before {
+  content: counter(step-counter);
+
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+
+  width: 52px;
+  height: 52px;
+
+  margin-right: 16px;
+
+  border: 5px solid #d4bfc4;
+  border-radius: 50%;
+
+  background-color: #7a3145;
+
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 20px;
+
+  color: #fbfbfb;
+}
+
+.how-it-works-item-text {
+  margin: 0;
+
+  font-family: "Inter Tight", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0;
+
+  color: #858585;
+}
+
+.how-it-works-item-text strong {
+  font-weight: 700;
+  color: #141414;
+}
+
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  margin: -1px;
+  padding: 0;
+
+  overflow: hidden;
+
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+
+  border: 0;
+}
