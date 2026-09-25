@@ -42,7 +42,7 @@
   font-family: "Inter Tight", sans-serif;
   font-weight: 600;
   font-size: 32px;
-  line-height: 32px;
+  line-height: 1;
   letter-spacing: -0.015em;
   text-transform: uppercase;
 
@@ -59,7 +59,7 @@
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 1.25;
   letter-spacing: 0;
 
   color: #fbfbfb;
@@ -83,7 +83,7 @@
   align-items: center;
 
   width: 100%;
-  min-height: 84px;
+  height: 76px;
 
   padding: 12px 24px;
 
@@ -137,19 +137,3 @@
   color: #141414;
 }
 
-.visually-hidden {
-  position: absolute;
-
-  width: 1px;
-  height: 1px;
-
-  margin: -1px;
-  padding: 0;
-
-  overflow: hidden;
-
-  clip: rect(0 0 0 0);
-  white-space: nowrap;
-
-  border: 0;
-}
