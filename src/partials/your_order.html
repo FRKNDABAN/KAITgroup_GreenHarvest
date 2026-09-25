@@ -1,5 +1,5 @@
 <!--Rumeysa-baslangic-->
-<section class="your_order">
+<section class="your_order" id="your_order">
     <div class="container">
         <div class="your_order__title">
             <h2 class="your_order__heading">
@@ -28,8 +28,8 @@
                     <input class="your_order__field-input" type="email" name="email" placeholder="Email"
                         aria-label="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
 
-                    <input class="your_order__field-input_area" type="text" name="comment" placeholder="Comment"
-                        aria-label="Comment" />
+                    <textarea class="your_order__field-input_area" name="comment" id="user-comment"
+                        placeholder="Comment"></textarea>
 
 
                 </form>
@@ -38,7 +38,7 @@
 
             <!-- Sağ kart: görsel + sosyal medya -->
             <div class="your_order__info-card">
-                <img class="your_order__image" src="../image/order-photo.jpg"
+                <img class="your_order__image" src="./image/order-photo.jpg"
                     alt="Woman preparing fresh vegetables in the kitchen" width="428" height="352" />
 
                 <p class="your_order__socials-title">Follow us on our social networks:</p>
