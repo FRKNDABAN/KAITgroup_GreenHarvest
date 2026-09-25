@@ -4,6 +4,10 @@
     padding: 100px 0;
 }
 
+.your_order .container{
+    padding: 0 100px;
+}
+
 /* Figma: 751x192 */
 .your_order__title {
     width: 751px;
