@@ -13,6 +13,10 @@
 @import url('./footer.css');
 @import url('./modal_menu.css');
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   font-family: 'Inter Tight', sans-serif;
 }
