@@ -37,7 +37,7 @@
 }
 
 .how-it-works-title {
-  margin: 0 0 24px;
+  margin: 0 0 24px 0;
 
   font-family: "Inter Tight", sans-serif;
   font-weight: 600;
@@ -54,7 +54,7 @@
 }
 
 .how-it-works-description {
-  margin: 0 0 104px;
+  margin: 0 0 104px 0;
 
   font-family: "Inter Tight", sans-serif;
   font-weight: 500;
