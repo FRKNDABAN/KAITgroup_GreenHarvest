@@ -1,8 +1,14 @@
+/* Advertisement Section - Desktop Only */
 
+.advertisement {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #fbfbfb;
+}
 
-.advertisement_content{
+.advertisement_content {
   width: 1080px;
-margin: 0 100px 0 100px;
+  margin: 0 auto;
 }
 
 .visually-hidden {
@@ -18,18 +24,12 @@ margin: 0 100px 0 100px;
   white-space: nowrap;
 }
 
-.advertisement {
-  padding-top: 80px;
-  padding-bottom: 80px;
-  background-color: #fbfbfb;
-}
-
 .advertisement-text {
   max-width: 1080px;
   margin: 0;
   color: #141414;
   font-family: 'Inter Tight', Arial, sans-serif;
-  font-size: 48px;
+  font-size: 76px;
   font-weight: 600;
   line-height: 1;
   letter-spacing: -0.015em;
@@ -37,9 +37,9 @@ margin: 0 100px 0 100px;
 }
 
 .advertisement-accent {
-  display: block;
-  width: 100%;
-  padding: 0 4px;
+  display: inline-block;
+  width: auto;
+  padding: 4px 8px;
   color: #fbfbfb;
   background-color: #576f35;
   border-radius: 12px;
@@ -47,25 +47,6 @@ margin: 0 100px 0 100px;
   -webkit-box-decoration-break: clone;
 }
 
-@media only screen and (min-width: 768px) {
-  .advertisement {
-    padding-top: 100px;
-    padding-bottom: 100px;
-  }
-
-  .advertisement-text {
-    font-size: 76px;
-  }
-
-  .advertisement-accent {
-    display: inline-block;
-    width: auto;
-    padding: 4px 8px;
-  }
-}
-
-@media only screen and (min-width: 1200px) {
-  .advertisement-line {
-    display: block;
-  }
+.advertisement-line {
+  display: block;
 }
