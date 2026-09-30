@@ -1,4 +1,6 @@
-
+.hero{
+  background-color: #576f35;
+}
 
 .hero .container {
   display: flex;
