@@ -6,6 +6,12 @@
   padding: 0 ;
 }
 
+.burger_menu{
+  display: none;
+  width: 32px;
+  height: 32px;
+}
+
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
   .container {
