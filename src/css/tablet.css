@@ -137,10 +137,12 @@
 
     width: 100%;
     max-width: 640px;
+    height: 640px;
 
     margin: 0 auto;
 
     object-fit: cover;
+    border-radius: 30px;
   }
 
   .how-it-works-content {
