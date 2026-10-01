@@ -19,7 +19,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer">
 
 
-  <link rel="stylesheet" crossorigin href="/KAITgroup_GreenHarvest/assets/index-DgN_s0MW.css">
+  <script type="module" crossorigin src="/KAITgroup_GreenHarvest/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/KAITgroup_GreenHarvest/assets/index-CWvTau_s.css">
 </head>
 
 <body>
@@ -49,12 +50,17 @@
             <button class="b_shop" onclick="location.href='#your_order';">SHOP NOW</button>
         </nav>
 
-        <a class="burger_menu" href="">
-
-            <svg class="menu_icon">
-                <use href="/KAITgroup_GreenHarvest/assets/icons-BK73tpiL.svg#icon-menu_burger"></use>
-            </svg>
-        </a>
+<button
+  class="burger_menu js-open-menu"
+  type="button"
+  aria-label="Open menu"
+  aria-expanded="false"
+  aria-controls="mobile-menu"
+>
+  <svg class="menu_icon" aria-hidden="true">
+    <use href="/KAITgroup_GreenHarvest/assets/icons-BK73tpiL.svg#icon-menu_burger"></use>
+  </svg>
+</button>
 
     </div>
 
@@ -94,6 +100,7 @@
         <!-- Atahan_baslangıc -->
 
 <section class="how-it-works" id="how-it-works">
+  <h2 class="visually-hidden">How it works</h2>
 
   <div class="how-it-works-container">
     <div class="how-it-works-image-side">
@@ -104,7 +111,7 @@
       <h3 class="how-it-works-title">
         To order your
         <span class="how-it-works-accent">vegetable</span>
-        basket, simply follow these
+        basket, simply&nbsp;follow these
         <span class="how-it-works-accent">easy steps</span>
       </h3>
 
@@ -190,6 +197,7 @@
                 src="/KAITgroup_GreenHarvest/assets/eggplant-Dbxs3jFw.png"
                 srcset="/KAITgroup_GreenHarvest/assets/eggplant-Dbxs3jFw.png 1x, /KAITgroup_GreenHarvest/assets/eggplant@2x-BzUic_i3.png 2x"
                 alt="Eggplant"
+                loading="lazy"
               />
             </li>
 
@@ -202,6 +210,7 @@
                 src="/KAITgroup_GreenHarvest/assets/leek-BQaoVhnz.png"
                 srcset="/KAITgroup_GreenHarvest/assets/leek-BQaoVhnz.png 1x, /KAITgroup_GreenHarvest/assets/leek@2x-BUg7heiM.png 2x"
                 alt="Leek"
+                loading="lazy"
               />
             </li>
 
@@ -214,6 +223,7 @@
                 src="/KAITgroup_GreenHarvest/assets/mushrooms-BZ9z5KCs.png"
                 srcset="/KAITgroup_GreenHarvest/assets/mushrooms-BZ9z5KCs.png 1x, /KAITgroup_GreenHarvest/assets/mushrooms@2x-Cwq5iptX.png 2x"
                 alt="Mushrooms"
+                loading="lazy"
               />
             </li>
 
@@ -226,6 +236,7 @@
                 src="/KAITgroup_GreenHarvest/assets/corn-D70yyrGR.png"
                 srcset="/KAITgroup_GreenHarvest/assets/corn-D70yyrGR.png 1x, /KAITgroup_GreenHarvest/assets/corn@2x-CwnwsxYb.png 2x"
                 alt="Corn"
+                loading="lazy"
               />
             </li>
 
@@ -238,6 +249,7 @@
                 src="/KAITgroup_GreenHarvest/assets/sweet-potatoes-CSuqnH6a.png"
                 srcset="/KAITgroup_GreenHarvest/assets/sweet-potatoes-CSuqnH6a.png 1x, /KAITgroup_GreenHarvest/assets/sweet-potatoes@2x-CjlclQO8.png 2x"
                 alt="Sweet potatoes"
+                loading="lazy"
               />
             </li>
 
@@ -250,13 +262,12 @@
                 src="/KAITgroup_GreenHarvest/assets/carrot-C1S2x3LK.png"
                 srcset="/KAITgroup_GreenHarvest/assets/carrot-C1S2x3LK.png 1x, /KAITgroup_GreenHarvest/assets/carrot@2x-DOC-EZ2Z.png 2x"
                 alt="Carrot"
+                loading="lazy"
               />
             </li>
           </ul>
         </div>
       </section>
-    </div>
-</section>
 <!--Atahan_bitiris-->
         <!--Atahan-->
 
@@ -278,7 +289,7 @@
 
     <ul class="reviews-list">
       <li class="reviews-item">
-        <img class="reviews-image" src="/KAITgroup_GreenHarvest/assets/john-wax-BJHylMQ3.png" alt="John Wax" width="56" height="56" />
+        <img class="reviews-image" src="/KAITgroup_GreenHarvest/assets/john-wax-BJHylMQ3.png" alt="John Wax" width="56" height="56" loading="lazy"/>
         <h3 class="reviews-name">John Wax</h3>
         <p class="reviews-text">
           These vegetables are my secret to delicious and healthy meals. The
@@ -289,7 +300,7 @@
 
       <li class="reviews-item">
         <img class="reviews-image" src="/KAITgroup_GreenHarvest/assets/victoria-romashenko-5JQ4Hzhd.png" alt="Victoria Romashenko" width="56"
-          height="56" />
+          height="56" loading="lazy" />
         <h3 class="reviews-name">Victoria Romashenko</h3>
         <p class="reviews-text">
           I love how fast and fresh the vegetables are delivered. Salads always
@@ -299,7 +310,7 @@
       </li>
 
       <li class="reviews-item">
-        <img class="reviews-image" src="/KAITgroup_GreenHarvest/assets/ihor-trachuk-Bl8gV1_J.png" alt="Ihor Trachuk" width="56" height="56" />
+        <img class="reviews-image" src="/KAITgroup_GreenHarvest/assets/ihor-trachuk-Bl8gV1_J.png" alt="Ihor Trachuk" width="56" height="56" loading="lazy" />
         <h3 class="reviews-name">Ihor Trachuk</h3>
         <p class="reviews-text">
           Recently tried my fresh tomatoes and peppers - amazing! The
@@ -308,6 +319,7 @@
         </p>
       </li>
     </ul>
+    <div class="reviews-dots" aria-label="Review navigation"></div>
   </div>
 </section>
 <!--Melis_bitiris-->
@@ -337,25 +349,48 @@
                     will contact you!
                 </h3>
 
-                <form class="your_order__form" novalidate>
-                    <input class="your_order__field-input" type="text" name="name" placeholder="Full Name"
-                        aria-label="Full Name" required />
+<form class="your_order__form">
+  <input
+    class="your_order__field-input"
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    aria-label="Full Name"
+    required
+  />
 
-                    <input class="your_order__field-input" type="email" name="email" placeholder="Email"
-                        aria-label="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
+  <input
+    class="your_order__field-input"
+    type="email"
+    name="email"
+    placeholder="Email"
+    aria-label="Email"
+    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+    required
+  />
 
-                    <textarea class="your_order__field-input_area" name="comment" id="user-comment"
-                        placeholder="Comment"></textarea>
+  <textarea
+    class="your_order__field-input_area"
+    name="comment"
+    id="user-comment"
+    placeholder="Comment"
+  ></textarea>
 
-
-                </form>
-                <button class="your_order__btn" type="submit">Send</button>
+  <button class="your_order__btn" type="submit">Send</button>
+</form>
             </div>
 
             <!-- Sağ kart: görsel + sosyal medya -->
             <div class="your_order__info-card">
-                <img class="your_order__image" src="/KAITgroup_GreenHarvest/assets/order-photo-DCkz0hN2.jpg"
-                    alt="Woman preparing fresh vegetables in the kitchen" width="428" height="352" />
+<img
+  class="your_order__image"
+  src="/KAITgroup_GreenHarvest/assets/order-photo-DCkz0hN2.jpg"
+  srcset="/KAITgroup_GreenHarvest/assets/order-photo-DCkz0hN2.jpg 1x, /KAITgroup_GreenHarvest/assets/order-photo@2x-B88_IDMj.jpg 2x"
+  alt="Woman preparing fresh vegetables in the kitchen"
+  width="428"
+  height="352"
+  loading="lazy"
+/>
 
                 <p class="your_order__socials-title">Follow us on our social networks:</p>
 
@@ -443,33 +478,45 @@
 <!--Musab_bitiris-->
     <!--Musab-->
 
-    <!--Rumeysa-->
-    <div class="modal_menu isopen">
-    <div class="modal_menu_contant">
+    <!--Furkan-Atahan-->
+    <div class="modal_menu js-menu" id="mobile-menu">
+  <div class="modal_menu_contant">
 
-        <a class="close_btn" href="./index.html">
+    <button
+      class="close_btn js-close-menu"
+      type="button"
+      aria-label="Close menu"
+    >
+      <svg class="close_icon" aria-hidden="true">
+        <use href="/KAITgroup_GreenHarvest/assets/icons-BK73tpiL.svg#icon-close"></use>
+      </svg>
+    </button>
 
-            <svg class="close_icon">
-                <use href="/KAITgroup_GreenHarvest/assets/icons-BK73tpiL.svg#icon-close"></use>
-            </svg>
+    <nav>
+      <ul class="navlist_modal">
+        <li>
+          <a class="js-menu-link" href="#how-it-works">How It Works</a>
+        </li>
 
-        </a>
+        <li>
+          <a class="js-menu-link" href="#vegetables">Vegetables</a>
+        </li>
 
-        <nav>
-            <ul class="navlist_modal">
+        <li>
+          <a class="js-menu-link" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+    </nav>
 
-                <li><a href="#how-it-works">How It Works</a></li>
-                <li><a href="#vegetables">Vegetables</a></li>
-                <li><a href="#reviews">Reviews</a></li>
+    <a class="b_shop_menu js-menu-link" href="#your_order">
+      SHOP NOW
+    </a>
 
-            </ul>
-        </nav>
-
-        <button class="b_shop_menu" onclick="location.href='#your_order';">SHOP NOW</button>
-
-    </div>
+  </div>
 </div>
-    <!--Rumeysa-->
+    <!--Furkan-Atahan-->
+
+    <!-- JavaScript -->
 
 </body>
 
