@@ -71,12 +71,11 @@
     margin-bottom: 52px;
     */
 
-  font-family: Inter Tight;
+  font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
-  font-style: SemiBold;
   font-size: 32px;
   line-height: 32px;
-  letter-spacing: -1.5%;
+  letter-spacing: -0.015em;
   vertical-align: middle;
   text-transform: uppercase;
   margin-bottom: 52px;

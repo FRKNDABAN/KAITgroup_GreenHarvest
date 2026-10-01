@@ -21,25 +21,51 @@
                     will contact you!
                 </h3>
 
-                <form class="your_order__form" novalidate>
-                    <input class="your_order__field-input" type="text" name="name" placeholder="Full Name"
-                        aria-label="Full Name" required />
+<form class="your_order__form">
+  <input
+    class="your_order__field-input"
+    type="text"
+    name="name"
+    placeholder="Full Name"
+    aria-label="Full Name"
+    required
+  />
 
-                    <input class="your_order__field-input" type="email" name="email" placeholder="Email"
-                        aria-label="Email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required />
+  <input
+    class="your_order__field-input"
+    type="email"
+    name="email"
+    placeholder="Email"
+    aria-label="Email"
+    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
+    required
+  />
 
-                    <textarea class="your_order__field-input_area" name="comment" id="user-comment"
-                        placeholder="Comment"></textarea>
+  <textarea
+    class="your_order__field-input_area"
+    name="comment"
+    id="user-comment"
+    placeholder="Comment"
+  ></textarea>
 
-
-                </form>
-                <button class="your_order__btn" type="submit">Send</button>
+  <button class="your_order__btn" type="submit">Send</button>
+</form>
             </div>
 
             <!-- Sağ kart: görsel + sosyal medya -->
             <div class="your_order__info-card">
-                <img class="your_order__image" src="./image/order-photo.jpg"
-                    alt="Woman preparing fresh vegetables in the kitchen" width="428" height="352" />
+<img
+  class="your_order__image"
+  src="./image/order-photo.jpg"
+  srcset="
+    ./image/order-photo.jpg 1x,
+    ./image/order-photo@2x.jpg 2x
+  "
+  alt="Woman preparing fresh vegetables in the kitchen"
+  width="428"
+  height="352"
+  loading="lazy"
+/>
 
                 <p class="your_order__socials-title">Follow us on our social networks:</p>
 
