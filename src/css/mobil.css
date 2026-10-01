@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 768px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
 
   .container {
     max-width: 375px;
@@ -31,23 +31,27 @@
     width: 168px;
     height: 16px;
   }
+
   /*hero*/
+
   .hero .container {
     width: 100%;
+    max-width: none;
     height: auto;
   }
 
   .hero_text_img {
+    display: flex;
     flex-direction: column;
     gap: 40px;
-    width: 375px;
+    width: 100%;
     height: auto;
   }
 
   .hero_text_cover {
-    margin-top: 100px;
+    margin: 100px auto 0;
     width: 100%;
-    height: auto;
+    max-width: 375px;
     padding: 0 20px;
     min-width: 0;
   }
@@ -84,46 +88,70 @@
     font-size: 14px;
     line-height: 1.25;
     letter-spacing: 0.01em;
-    max-width: 472px;
+    max-width: 335px;
     width: 100%;
-  }
-  /*how work*/
-  .how-it-works-container {
-    width: 100%;
-    padding: 0;
-    flex-direction: column;
   }
 
-  .how-it-works-image-side {
-    width: 100%;
-    padding: 40px 20px;
-  }
+/* how work */
 
-  .how-it-works-image {
+.how-it-works-container {
   width: 100%;
-  height: auto;
-  aspect-ratio: 335 / 450;
-  object-fit: cover;
+  padding: 0;
+
+  flex-direction: column;
 }
 
-  .how-it-works-content {
-    width: 100%;
-    padding: 80px 20px;
-  }
+.how-it-works-image-side {
+  width: 100%;
+  padding: 40px 20px;
+}
 
-  .how-it-works-title {
-    margin-bottom: 20px;
-    font-size: 28px;
-  }
+.how-it-works-image {
+  display: block;
 
-  .how-it-works-description {
-    margin-bottom: 40px;
-    font-size: 14px;
-  }
+  width: 100%;
+  max-width: 335px;
+  height: auto;
 
-  .how-it-works-item-text {
-    font-size: 14px;
-  }
+  aspect-ratio: 335 / 450;
+  object-fit: cover;
+
+  margin: 0 auto;
+}
+
+.how-it-works-content {
+  width: 100%;
+  padding: 80px 20px;
+}
+
+.how-it-works-title {
+  width: 100%;
+  max-width: 335px;
+
+  margin: 0 auto 20px;
+
+  font-size: 28px;
+}
+
+.how-it-works-description {
+  width: 100%;
+  max-width: 335px;
+
+  margin: 0 auto 40px;
+
+  font-size: 14px;
+}
+
+.how-it-works-list {
+  width: 100%;
+  max-width: 335px;
+
+  margin: 0 auto;
+}
+
+.how-it-works-item-text {
+  font-size: 14px;
+}
 
   /*advertisement*/
 
@@ -148,6 +176,8 @@
   .vegetables-container {
     width: 100%;
     padding: 0 20px;
+    max-width: 375px;
+    margin: 0 auto;
   }
 
   .vegetables-heading {
