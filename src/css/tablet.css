@@ -1,18 +1,34 @@
-@media screen and (min-width: 768px) {
-  * {
-    padding: 0;
-    margin: 0;
-  }
-
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .container {
-    min-width: 768px;
-    max-width: 1280px;
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
     text-align: left;
   }
 
   header .container {
-    width: 768px;
-    gap: 448px;
+    width: 100%;
+    padding: 0 32px;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .h_navlist {
+    display: none;
+  }
+
+  .burger_menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 40px;
+    height: 40px;
+  }
+
+  .menu_icon {
+    width: 40px;
+    height: 40px;
   }
 
   .logo_header {
@@ -25,77 +41,108 @@
     height: 40px;
   }
 
-  /*hero*/
+  /* hero */
 
   .hero .container {
-    width: 768px;
-    height: 1020px;
+    width: 100%;
+    max-width: 768px;
+    height: auto;
   }
 
   .hero_text_img {
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+    height: auto;
+
     gap: 52px;
-    width: 768px;
-    height: 1020px;
   }
 
   .hero_text_cover {
+    width: 100%;
+
     margin-top: 120px;
-    width: 704px;
-    height: auto;
     padding: 0 32px;
   }
 
   .hero_text {
-    width: 704px;
+    width: 100%;
+    max-width: 704px;
     height: 312px;
+
     margin: 0;
     gap: 24px;
   }
 
   .hero_img {
-    width: 768px;
+    width: 100%;
     height: 536px;
+
+    flex-shrink: 0;
   }
 
   .hero_text h1 {
     margin: 0;
+
     color: #fff;
+
     font-family: 'Inter Tight', sans-serif;
     font-weight: 600;
     font-size: 76px;
     line-height: 1;
     letter-spacing: -0.05em;
+
     text-transform: uppercase;
   }
 
   .hero_text p {
+    width: 100%;
+    max-width: 603px;
+
     margin: 0;
+
     color: #fff;
+
     font-family: 'Inter Tight', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.25;
     letter-spacing: 0.01em;
-    width: 603px;
-    max-width: 604px;
   }
 
-  /*how work*/
+  /* how work */
+
+  .how-it-works {
+    background: linear-gradient(to bottom, #7a3145 840px, #576f35 840px);
+  }
 
   .how-it-works-container {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
+
+    margin: 0 auto;
     padding: 0;
+
+    flex-direction: column;
   }
 
   .how-it-works-image-side {
-    width: 768px;
-    height: 840px;
+    width: 100%;
     padding: 100px 64px;
   }
 
   .how-it-works-image {
+    display: block;
+
     width: 100%;
-    height: 100%;
+    max-width: 640px;
+    height: 640px;
+
+    margin: 0 auto;
+
+    object-fit: cover;
+    border-radius: 30px;
   }
 
   .how-it-works-content {
@@ -104,13 +151,28 @@
   }
 
   .how-it-works-title {
-    margin-bottom: 24px;
+    width: 100%;
+    max-width: 440px;
+
+    margin: 0 auto 24px;
+
     font-size: 32px;
   }
 
   .how-it-works-description {
-    margin-bottom: 52px;
+    width: 100%;
+    max-width: 440px;
+
+    margin: 0 auto 52px;
+
     font-size: 16px;
+  }
+
+  .how-it-works-list {
+    width: 100%;
+    max-width: 440px;
+
+    margin: 0 auto;
   }
 
   .how-it-works-item-text {
@@ -136,14 +198,18 @@
     letter-spacing: 0.015em;
   }
 
-  /*vegetables*/
+  /* vegetables */
 
   .vegetables-container {
-    width: 768px;
+    width: 100%;
+    max-width: 768px;
+
+    margin: 0 auto;
     padding: 0 32px;
   }
 
   .vegetables-heading {
+    max-width: 626px;
     margin-bottom: 52px;
   }
 
@@ -157,12 +223,16 @@
   }
 
   .vegetables-list {
-    flex-wrap: wrap;
+    display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+
+    column-gap: 24px;
+    row-gap: 28px;
   }
 
   .vegetables-card {
-    width: 335px;
+    width: calc((100% - 24px) / 2);
     height: 376px;
   }
 
@@ -192,15 +262,33 @@
   }
 
   .reviews-list {
-    width: 704px;
+    width: 100%;
     gap: 24px;
-    flex-wrap: wrap; /*??*/
-    flex-direction: row; /*??*/
+
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+
+    scrollbar-width: none;
+  }
+
+  .reviews-list::-webkit-scrollbar {
+    display: none;
   }
 
   .reviews-item {
-    width: 340px;
+    flex: 0 0 calc((100% - 24px) / 2);
+    width: calc((100% - 24px) / 2);
     height: 228px;
+
+    scroll-snap-align: start;
+  }
+
+  .reviews-dots {
+    display: flex;
   }
 
   /*your order*/
@@ -233,7 +321,7 @@
 
   .your_order__grid {
     flex-direction: column;
-    margin: 0 32px;
+    margin: 0 auto;
     width: 640px;
     height: 1192px;
     gap: 32px;
@@ -288,8 +376,6 @@
   /*footer*/
 
   footer .container {
-    width: 704px;
-    justify-self: center;
     padding: 32px;
   }
 
@@ -337,7 +423,7 @@
 
   .footer__bottom {
     flex-direction: row;
-    width: 704px;
+    width: 100%;
     gap: 16px;
   }
 
