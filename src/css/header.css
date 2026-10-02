@@ -21,7 +21,7 @@ header .container {
 }
 
 .navlist a {
-  border: 1px, solid, #fbfbfb;
+  border: 1px solid #fbfbfb;
   border-radius: 12px;
   padding: 12px;
   color: #fbfbfb;
@@ -81,4 +81,32 @@ nav {
     color: #7a3145;
     transition-duration: 1ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.burger_menu {
+  display: none;
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  cursor: pointer;
+}
+
+.menu_icon {
+  display: block;
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 1280px) {
+  .h_navlist {
+    display: flex;
+  }
+
+  .burger_menu {
+    display: none;
+  }
 }
